@@ -12,7 +12,10 @@ export default function Login() {
                 <form>
                     <h1>Faça seu login!</h1>
                     <input type="text" placeholder="Sua matricula"/>
+                    <input type="text" placeholder="Seu Código"/>
                     <button type="submit" className="button">Entrar</button>
+                   
+                    
                 </form>
             </section>
             
