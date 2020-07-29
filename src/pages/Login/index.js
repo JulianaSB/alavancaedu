@@ -1,25 +1,24 @@
 import React from 'react';
 import './style.css';
-import logoImg from '../../assests/logo.svg'
-import heroesImg from '../../assests/heroes.png'
+import { Link } from 'react-router-dom';
+import logoImg from '../../assests/alavanca_logo.png'
+
 
 export default function Login() {
     return (
-        <div className="login-container">
-            <section className="form">
-                <img src={logoImg} alt="Be the hero"/>
-
-                <form>
-                    <h1>Faça seu login!</h1>
-                    <input type="text" placeholder="Sua matricula"/>
-                    <input type="text" placeholder="Seu Código"/>
-                    <button type="submit" className="button">Entrar</button>
-                   
-                    
-                </form>
+        <div className="login-container container">
+            <section className="form col-md-6">
+                <div className="card">
+                    <div className="card-body">
+                        <form align="center">
+                            <img src={logoImg} alt="Heroes"/>
+                            <input type="text" placeholder="Sua matricula"/>
+                            <input type="text" placeholder="Seu Código"/>
+                            <Link className="button" to="/profile">Entrar</Link>
+                        </form>
+                    </div>
+                </div>
             </section>
-            
-            <img src={heroesImg} alt="Heroes"/>
         </div>
     );
 }

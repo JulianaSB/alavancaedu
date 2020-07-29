@@ -1,0 +1,21 @@
+.question-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+}
+
+@media(min-width: 801px) {
+    .question-container img {
+        height: 100vh;
+    }
+}
+
+.progress-bar {
+    width: 40%;
+    background-size: 5rem 5rem;
+}
+
+.question-container h4 {
+    font-weight: 400;
+}

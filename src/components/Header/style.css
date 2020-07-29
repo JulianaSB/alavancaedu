@@ -1,0 +1,9 @@
+header {
+    background-color: #205fd2;
+}
+
+@media(max-width: 800px) {
+    header button {
+        margin: 8px;
+    }
+}

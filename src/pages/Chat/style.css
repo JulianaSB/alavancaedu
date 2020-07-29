@@ -1,0 +1,30 @@
+.chat-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+    height: 100vh;
+}
+
+
+.chat-container .img-profile{
+    align-items: center;
+    display: flex;
+}
+
+.chat-container img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width: 800px) {
+    .chat-container img {
+        width: 50px;
+    }
+}
+
+@media(min-width: 801px) {
+    .chat-container img {
+        width: 150px;
+    }
+}
