@@ -12,8 +12,8 @@ export default function Login() {
                     <div className="card-body">
                         <form align="center">
                             <img src={logoImg} alt="Heroes"/>
-                            <input type="text" placeholder="Sua matricula"/>
-                            <input type="text" placeholder="Seu Código"/>
+                            <input type="text" placeholder="Sua matricula" required/>
+                            <input type="text" placeholder="Seu Código" required/>
                             <Link className="button" to="/profile">Entrar</Link>
                         </form>
                     </div>

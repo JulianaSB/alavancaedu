@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import iconImg from '../../assests/estrangeiro.png';
 import icon01Img from '../../assests/monstros.png';
 import icon02Img from '../../assests/monstros-02.png';
 
-export default function Profile() {
+export default function Profile (props) {
+    const {
+        className
+    } = props;
+
+    const [modal, setModal] = useState(false);
+
+    const toggle = () => setModal(!modal);
     return (
-        <div className="profile-container">
+        <div className="profile-container container">
             <h1 className="mb-4">Oi, Joãozinho</h1>
             <div className="card">
                 <div className="card-body">
@@ -32,9 +40,22 @@ export default function Profile() {
                         </div>
                     </div>
                     <br />
-                    <Link className="button" to="/question">Iniciar Prova</Link>
+                    <Link className="button" onClick={toggle}>Iniciar Prova</Link>
+                </div>
             </div>
-            </div>
+            <Modal isOpen={modal} toggle={toggle} className={className}>
+                <ModalHeader toggle={toggle}>ATENÇÃO</ModalHeader>
+                <ModalBody>
+                    <p>
+                        Se começar a prova, não poderá voltar ou pausar.<br />
+                        Realizar a prova agora?
+                    </p>
+                </ModalBody>
+                <ModalFooter>
+                    <Button color="secondary" onClick={toggle}>Cancelar</Button>
+                    <Link className="btn btn-success" to="/question">Iniciar Prova</Link>
+                </ModalFooter>
+            </Modal>
         </div>
     );
 }

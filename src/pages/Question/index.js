@@ -30,7 +30,7 @@ export default function Question () {
                     </section>
                     <div className="row justify-content-center">
                         <Link className="btn btn-secondary" to="/profile">Anterior</Link>
-                        <Link className="btn btn-success ml-2" to="/chat">Próxima</Link>
+                        <Link className="btn btn-success ml-2" to="/resume">Próxima</Link>
                     </div>
                 </div>
             </div>

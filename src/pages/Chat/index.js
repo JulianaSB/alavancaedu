@@ -5,16 +5,18 @@ import iconImg from '../../assests/estrangeiro.png';
 
 export default function Profile() {
     return (
-        <div className="chat-container">
+       <div className="chat-container container">
             <h1 className="mb-4">Oi, Joãozinho</h1>
-            <div className="card">
+           <div className="card">
                 <div className="card-body">
-                    <h2 className="mb-4">PARABÉNS!!! Você terminou a prova.</h2>
-                    <p> 
-                        Agora se tiver alguma dúvida ou precisa de ajuda, só mandar aqui embaixo que nosso E.T responde.<br />
-                        Senão tiver dúvidas, acabou por hoje :)
-                    </p>
-                    <img src={iconImg} alt="Icon"/>
+                    <div className="row">
+                        <div className="col-md-2 mb-2">
+                            <img src={iconImg} alt="Icon"/>
+                        </div>
+                        <div className="col-md-10">
+                        <iframe scrolling="no" src='https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=b22ec634-6838-4045-8de6-29f8be1ce8b1&serviceInstanceID=b6c6f9dd-dc1f-4b47-8c87-1fee2a4518da'></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
