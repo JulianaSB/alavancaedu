@@ -1,4 +1,13 @@
+<p align="center">
+  <img src="https://github.com/JulianaSB/alavancaedu/blob/master/src/assests/alavanca_logo.png" />
+</p>
+
+Alavanca Edu is a user interface for conducting tests online.
+##
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Layout
+
+<a href="https://www.loom.com/share/1add06e52c1d4f3fa6325befc805ef7d"> <p> Loom Recording - Watch Video</p> <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/1add06e52c1d4f3fa6325befc805ef7d-with-play.gif"> </a>
 
 ## Available Scripts
 
